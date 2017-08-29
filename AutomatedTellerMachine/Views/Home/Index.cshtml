@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<div class="jumbotron">
+    <h1>Middle Valley Community</h1>
+    <p class="lead">Middle Valley Community Bank offers the first-ever web-based ATM. Give it a try today!</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Powered by ASP.NET</a></p>
+</div>*@
+
+<div class="row">
+
+    <div class="col-md-6 margin-top-20">
+    <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span> Withdraw</a>
+    
+    <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span> Quick Cash $100</a>
+
+    <a href="@Url.Action("Details","CheckingAccount")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span> Balance inquiry</a>
+
+    </div>
+
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-print"></span> Print Statement</a>
+
+        <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-transfer"></span> Transfer Funds</a>
+
+        <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-up"></span> Deposit</a>
+
+
+    </div>
+
+
+    
+</div>
+@section scripts{
+    <script>var testing = true;</script>
+    }
+
+@*You are using @Request.Browser.Browser , and that's OK :) !*@
